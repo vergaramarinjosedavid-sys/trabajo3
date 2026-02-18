@@ -1,20 +1,24 @@
 # Proyecto Java - Clase Product
 
-Este proyecto tiene como objetivo demostrar conceptos básicos de Programación Orientada a Objetos (POO) en Java, incluyendo:
-- Definición de atributos.
-- Constructores (por defecto y parametrizados).
-- Métodos getter y setter.
-- Sobrescritura del método `toString()`.
-- Clase de demostración (`Main`) para crear y manipular objetos.
+## Descripción
+Este proyecto demuestra conceptos básicos de Programación Orientada a Objetos en Java: definición de atributos, encapsulación, constructores, getters/setters, sobrescritura de `toString` e instanciación de objetos desde una clase principal.
 
----
+## Requisitos
+- **Java JDK 11** o superior instalado.
+- **Maven** instalado solo si vas a usar `pom.xml`.
+- Git para control de versiones.
+- Entorno de desarrollo recomendado: **Visual Studio Code** o IntelliJ IDEA.
 
 ## Estructura del proyecto
+- **Main.java**: clase con el método `public static void main(String[] args)` que demuestra el uso de `Product`.  
+- **Product.java**: clase modelo con atributos privados, constructores, getters/setters y `toString`.  
+- **pom.xml**: archivo de Maven si se requiere gestión de dependencias o empaquetado.
 
----
-
-## Cómo compilar y ejecutar
-
-1. Compilar los archivos Java:
+## Compilar y ejecutar
+### Opción A Compilar y ejecutar manualmente (sin Maven)
 ```bash
-javac actividad3/src/main/java/com/example/*.java
+# Desde la raíz del proyecto: compilar
+javac -d out actividad3/src/main/java/com/example/*.java
+
+# Ejecutar indicando el paquete completo
+java -cp out com.example.Main
