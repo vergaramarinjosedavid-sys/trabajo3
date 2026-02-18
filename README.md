@@ -1,24 +1,35 @@
-# Proyecto Java - Clase Product
+# Proyecto Clase Product en Java
 
-## Descripción
-Este proyecto demuestra conceptos básicos de Programación Orientada a Objetos en Java: definición de atributos, encapsulación, constructores, getters/setters, sobrescritura de `toString` e instanciación de objetos desde una clase principal.
+## 📚 Descripción del Proyecto
 
-## Requisitos
-- **Java JDK 11** o superior instalado.
-- **Maven** instalado solo si vas a usar `pom.xml`.
-- Git para control de versiones.
-- Entorno de desarrollo recomendado: **Visual Studio Code** o IntelliJ IDEA.
+Este proyecto es una demostración práctica de los conceptos fundamentales de la Programación Orientada a Objetos (POO) en Java. Implementa una clase `Product` que representa un libro con sus características básicas y una clase `Main` para demostrar su funcionalidad.
 
-## Estructura del proyecto
-- **Main.java**: clase con el método `public static void main(String[] args)` que demuestra el uso de `Product`.  
-- **Product.java**: clase modelo con atributos privados, constructores, getters/setters y `toString`.  
-- **pom.xml**: archivo de Maven si se requiere gestión de dependencias o empaquetado.
+### Conceptos demostrados:
+- **Encapsulamiento**: Atributos privados con getters y setters
+- **Constructores**: Constructor vacío y constructor parametrizado
+- **Sobrecarga de métodos**: Múltiples constructores
+- **Sobrescritura de métodos**: Método `toString()` personalizado
+- **Validaciones**: Control de valores negativos en setters
 
-## Compilar y ejecutar
-### Opción A Compilar y ejecutar manualmente (sin Maven)
-```bash
-# Desde la raíz del proyecto: compilar
-javac -d out actividad3/src/main/java/com/example/*.java
+### Clases incluidas:
+- `Product.java`: Clase principal que define la estructura de un libro
+- `Main.java`: Clase de demostración que muestra el uso de la clase Book
 
-# Ejecutar indicando el paquete completo
-java -cp out com.example.Main
+---
+
+## 🚀 Instrucciones de Compilación y Ejecución
+
+### Requisitos previos
+- Java Development Kit (JDK) 8 o superior instalado
+- Editor de texto o IDE (Eclipse, IntelliJ IDEA, VS Code, etc.)
+
+### demostracion de salida:
+- === GETTERS - PRODUCTO 2 ===
+- Nombre: Vientos de invierno
+- Stock: 15
+- Precio: 29.99
+- ¿En venta?: true
+
+- === TOSTRING ===
+- Producto 1: Product [Nombre: Cien años de soledad, Stock: 5, En venta: true, Precio: 19.99]
+- Producto 2: Product [Nombre: Vientos de invierno, Stock: 15, En venta: true, Precio: 29.99]
